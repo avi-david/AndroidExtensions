@@ -27,7 +27,7 @@ abstract class UnlimitedScrollListener(private val linearLayoutManager: LinearLa
     var isFetching: Boolean = false
     var hasReachedEndOfPage: Boolean = false
 
-    override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
         super.onScrolled(recyclerView, dx, dy)
 
         val visibleItemCount = recyclerView?.childCount ?: 0
